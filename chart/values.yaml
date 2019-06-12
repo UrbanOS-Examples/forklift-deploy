@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: smartcitiesdata/forklift
-  tag: 0.4.9
+  tag: development
   pullPolicy: IfNotPresent
 
 # monitoring:
