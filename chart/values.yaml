@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: smartcitiesdata/forklift
   tag: development
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 # monitoring:
   # targetPort: 4000
