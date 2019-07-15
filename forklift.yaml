@@ -1,8 +1,14 @@
 image:
   tag: 0.6.0
   
+kafka:
+  #comma delimited list of kafka seed brokers
+  brokers: streaming-service-kafka-bootstrap.streaming-prime:9092
+
+kdp:
+  url: http://kdp-kubernetes-data-platform-presto.kdp:8080
+
 redis:
-  enabled: false
   host: redis.external-services
 
 resources:
