@@ -49,6 +49,7 @@ def deployTo(applicationName, environment, extraArgs = '') {
             set -e
             helm init --client-only
             helm repo add scdp https://smartcitiesdata.github.io/charts
+            helm repo update
             helm upgrade --install forklift scdp/forklift \
                 --namespace=streaming-services \
                 --values=forklift.yaml \
