@@ -1,2 +1,14 @@
 image:
   tag: 0.6.0
+  
+redis:
+  enabled: false
+  host: redis.external-services
+
+resources:
+  limits:
+   cpu: 1000m
+   memory: 2Gi
+  requests:
+   cpu: 1000m
+   memory: 2Gi

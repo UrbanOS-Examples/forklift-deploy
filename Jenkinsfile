@@ -48,10 +48,10 @@ def deployTo(applicationName, environment, extraArgs = '') {
         sh("""#!/bin/bash
             set -e
             helm init --client-only
-            helm upgrade --install ${applicationName} \
-                ./chart \
+            helm repo add scdp https://smartcitiesdata.github.io/charts
+            helm upgrade --install forklift scdp/forklift \
                 --namespace=streaming-services \
-                --values=${applicationName}.yaml \
+                --values=forklift.yaml \
                 ${extraArgs}
         """.trim())
     }
