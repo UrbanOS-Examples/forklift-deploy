@@ -1,6 +1,6 @@
 image:
-  tag: 0.6.0
-  
+  tag: 0.6.1
+
 kafka:
   #comma delimited list of kafka seed brokers
   brokers: streaming-service-kafka-bootstrap.streaming-prime:9092
