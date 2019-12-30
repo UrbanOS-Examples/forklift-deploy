@@ -18,3 +18,5 @@ resources:
   requests:
    cpu: 1000m
    memory: 2Gi
+
+compactionSchedule: "00 01 * * *"
