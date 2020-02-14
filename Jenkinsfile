@@ -53,7 +53,8 @@ def deployTo(applicationName, environment, extraArgs = '') {
             helm upgrade --install forklift scdp/forklift \
                 --version 2.4.0 \
                 --namespace=streaming-services \
-                --values=forklift.yaml \
+                --values=forklift-base.yaml \
+                --values=forklift-${environment}.yaml \
                 ${extraArgs}
         """.trim())
     }
