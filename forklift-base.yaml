@@ -19,4 +19,4 @@ resources:
    cpu: 1000m
    memory: 2Gi
 
-compactionSchedule: "0 */2 * * *"
+compactionSchedule: "0 */1 * * *"
