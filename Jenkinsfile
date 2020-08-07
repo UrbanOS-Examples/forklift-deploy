@@ -51,7 +51,7 @@ def deployTo(applicationName, environment, extraArgs = '') {
             helm repo add scdp https://smartcitiesdata.github.io/charts
             helm repo update
             helm upgrade --install forklift scdp/forklift \
-                --version 2.7.0 \
+                --version 2.7.1 \
                 --namespace=streaming-services \
                 --values=forklift-base.yaml \
                 --values=forklift-${environment}.yaml \
