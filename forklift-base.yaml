@@ -1,5 +1,5 @@
 image:
-  tag: 0.15.1
+  tag: wip-compaction-metrics
 
 kafka:
   #comma delimited list of kafka seed brokers
