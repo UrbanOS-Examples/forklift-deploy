@@ -48,7 +48,7 @@ def deployTo(applicationName, environment, extraArgs = '') {
         sh("""#!/bin/bash
             set -e
             helm init --client-only
-            helm repo add scdp https://smartcitiesdata.github.io/charts
+            helm repo add scdp https://datastillery.github.io/charts
             helm repo update
             helm upgrade --install forklift scdp/forklift \
                 --version 2.7.0 \
