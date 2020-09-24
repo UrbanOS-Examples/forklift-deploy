@@ -51,7 +51,7 @@ def deployTo(applicationName, environment, extraArgs = '') {
             helm repo add scdp https://datastillery.github.io/charts
             helm repo update
             helm upgrade --install forklift scdp/forklift \
-                --version 2.7.0 \
+                --version 2.8.0 \
                 --namespace=streaming-services \
                 --values=forklift-base.yaml \
                 --values=forklift-${environment}.yaml \
