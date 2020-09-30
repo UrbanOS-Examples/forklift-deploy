@@ -20,4 +20,4 @@ resources:
    memory: 2Gi
 
 compactionSchedule: "0 */1 * * *"
-specialCompactionDatasets: "90d51c3b-8c01-4ba4-ac24-a3206458f851,00000000-7e77-4b1c-92a4-36e09db56173"
+specialCompactionDatasets: "90d51c3b-8c01-4ba4-ac24-a3206458f851,00000000-7e77-4b1c-92a4-36e09db56173,9cf13962-5f81-4dbb-bf98-3b9404050744,7d22b8b4-2365-4afa-9b7c-e27b39c3e710"
