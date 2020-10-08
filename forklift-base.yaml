@@ -1,5 +1,5 @@
 image:
-  tag: 0.17.3
+  tag: 0.17.4
 
 kafka:
   #comma delimited list of kafka seed brokers
